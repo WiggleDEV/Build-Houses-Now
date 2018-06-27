@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BHN
+Comment=BHN P2P Cryptocurrency
+Comment[fr]=BHN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BHN, eşten eşe kriptografik sanal para birimi
+Exec=bhn-qt %u
+Terminal=false
+Type=Application
+Icon=bhn128
+MimeType=x-scheme-handler/bhn;
+Categories=Office;Finance;
