@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 # create multiresolution windows icon
 #mainnet
 ICON_SRC=../../src/qt/res/icons/bitcoin.png
