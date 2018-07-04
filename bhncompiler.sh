@@ -22,8 +22,5 @@ addnode=45.63.100.202:20001
 addnode=49.28.204.132:20001
 EOF
 echo -e "Compiling complete"
-echo -e "To run the daemon: ./bhnd --daemon"
-echo -e "./bhn-cli to use the wallet after it's synced"
-
-
-
+echo -e "Starting daemon"
+./bhnd --daemon
