@@ -8,7 +8,7 @@ chmod +x src/leveldb/build_detect_platform
 echo -e "Actual compiling starts now, this will take a while so grab a beer"
 make
 cat <<EOF > ~/.bhn/bhn.conf 
-rpcuser=bhnrpc > ~./bhn/bhn.conf
+rpcuser=bhnrpc
 rpcpassword=rpcpass
 addnode=149.28.13.32:20001
 addnode=217.163.23.58:20001
