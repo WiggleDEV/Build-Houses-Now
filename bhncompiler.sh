@@ -7,8 +7,6 @@ chmod +x src/leveldb/build_detect_platform
 ./configure
 echo -e "Actual compiling starts now, this will take a while so grab a beer"
 make
-cd src/
-
 cat <<EOF > ~/.bhn/bhn.conf 
 rpcuser=bhnrpc > ~./bhn/bhn.conf
 rpcpassword=rpcpass
@@ -21,6 +19,7 @@ addnode=45.76.199.91:20001
 addnode=45.63.100.202:20001
 addnode=49.28.204.132:20001
 EOF
+cd src/
 echo -e "Compiling complete"
 echo -e "Starting daemon"
 ./bhnd --daemon
