@@ -7,6 +7,8 @@ chmod +x src/leveldb/build_detect_platform
 ./configure
 echo -e "Actual compiling starts now, this will take a while so grab a beer"
 make
+mkdir ~/.bhn
+touch ~/.bhn/bhn.conf
 cat <<EOF > ~/.bhn/bhn.conf 
 rpcuser=bhnrpc
 rpcpassword=rpcpass
