@@ -9,9 +9,10 @@ echo -e "Actual compiling starts now, this will take a while so grab a beer"
 make
 mkdir ~/.bhn
 touch ~/.bhn/bhn.conf
+rpcpassword=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 cat <<EOF > ~/.bhn/bhn.conf 
 rpcuser=bhnrpc
-rpcpassword=rpcpass
+rpcpassword=$rpcpassword
 addnode=149.28.13.32:20001
 addnode=217.163.23.58:20001
 addnode=207.148.74.89:20001
